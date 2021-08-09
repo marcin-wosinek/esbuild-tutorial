@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marcin-wosinek/esbuild-tutorial/issues"
   },
-  "homepage": "https://github.com/marcin-wosinek/esbuild-tutorial#readme"
+  "homepage": "https://github.com/marcin-wosinek/esbuild-tutorial#readme",
+  "devDependencies": {
+    "esbuild": "^0.12.19"
+  }
 }
