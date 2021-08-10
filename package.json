@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild --bundle src/index.js --outfile=www/main.js"
+    "build": "esbuild --bundle src/index.js --outfile=www/main.js",
+    "start": "esbuild --bundle src/index.js --outfile=www/main.js --servedir=www",
+    "watch": "esbuild --bundle src/index.js --outfile=www/main.js --watch"
   },
   "repository": {
     "type": "git",
