@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
-console.log("test");
+import esbuildServe from "esbuild-serve";
 
-require("esbuild")
-  .build({
+esbuildServe(
+  {
     logLevel: "info",
     entryPoints: ["src/index.js"],
     bundle: true,
     outfile: "www/main.js",
-  })
-  .catch(() => process.exit(1));
+  },
+  { root: "www" }
+);

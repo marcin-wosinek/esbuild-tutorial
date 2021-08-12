@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Example repository for an [esbuild tutorial](https://how-to.dev/series/esbuild-tutorial).",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild --bundle src/index.js --outfile=www/main.js",
-    "start": "npm run build -- --servedir=www",
-    "watch": "npm run build -- --watch"
+    "build": "node esbuild.config.js",
+    "start": "node esbuild.config.js -w"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/marcin-wosinek/esbuild-tutorial#readme",
   "devDependencies": {
-    "esbuild": "^0.12.19"
+    "esbuild": "^0.12.19",
+    "esbuild-serve": "^1.0.1"
   }
 }
