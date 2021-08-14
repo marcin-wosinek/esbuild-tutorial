@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.js"],
+  "sourcesContent": ["import \"./style.css\";\n\nconst header = document.createElement(\"h1\");\n\nheader.innerHTML = \"Hello world\";\n\ndocument.body.appendChild(header);\n"],
+  "mappings": ";;AAEA,MAAM,SAAS,SAAS,cAAc;AAEtC,SAAO,YAAY;AAEnB,WAAS,KAAK,YAAY;",
+  "names": []
+}

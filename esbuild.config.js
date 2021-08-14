@@ -8,6 +8,7 @@ esbuildServe(
     entryPoints: ["src/index.js"],
     bundle: true,
     outfile: "www/main.js",
+    sourcemap: true,
   },
   { root: "www" }
 );

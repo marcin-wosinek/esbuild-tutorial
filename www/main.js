@@ -4,3 +4,4 @@
   header.innerHTML = "Hello world";
   document.body.appendChild(header);
 })();
+//# sourceMappingURL=main.js.map
